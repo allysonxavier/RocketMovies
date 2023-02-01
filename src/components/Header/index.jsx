@@ -1,5 +1,6 @@
 import { Container, Profile, Line } from "./styles";
 import { Input } from "../Input";
+
 export function Header() {
   return (
     <>
