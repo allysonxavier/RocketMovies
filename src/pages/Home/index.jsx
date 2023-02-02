@@ -3,6 +3,7 @@ import { Container } from "./styles";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { FiPlus } from "react-icons/fi";
+import { Note } from "../../components/Note";
 
 export function Home() {
   return (
@@ -19,6 +20,7 @@ export function Home() {
             className={"button-add"}
           ></Button>
         </a>
+        <Note data={{ title: "React" }} score={4} />
       </main>
     </Container>
   );

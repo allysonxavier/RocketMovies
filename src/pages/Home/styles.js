@@ -5,6 +5,8 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.background800};
 
   > main {
+    padding: 24px 123px;
+
     max-width: 1366px;
 
     margin: 48px auto;

@@ -7,6 +7,8 @@ export const Line = styled.div`
 `;
 
 export const Container = styled.header`
+  padding: 24px 123px;
+
   margin: 0 auto;
   width: 100%;
   max-width: 1366px;
