@@ -1,22 +1,25 @@
 import React from "react";
 import { Container } from "./styles";
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
 export function Score({ score }) {
-  const stars = [];
-  for (let i = 0; i < 5; i++) {
-    if (i < score) {
-      stars.push(
-        <span key={i} role="img" aria-label="filled star">
-          ⭐️
-        </span>
-      );
-    } else {
-      stars.push(
-        <span key={i} role="img" aria-label="empty star">
-          ☆
-        </span>
-      );
-    }
+  const stars = [1, 2, 3, 4, 5];
+  function onClick(e) {
+    console.log(e.target);
   }
-  return <Container>{stars}</Container>;
+  const elements = stars.map((el, i) => {
+    return (
+      <span
+        key={i}
+        role="img"
+        aria-label="filled star"
+        name={i + 1}
+        onClick={onClick}
+      >
+        {i < score ? <AiFillStar /> : <AiOutlineStar />}
+      </span>
+    );
+  });
+
+  return <Container>{elements}</Container>;
 }
