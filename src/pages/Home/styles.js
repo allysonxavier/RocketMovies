@@ -3,10 +3,12 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   background-color: ${({ theme }) => theme.COLORS.background800};
-
+  display: flex;
+  flex-direction: column;
   > main {
     padding: 24px 123px;
-
+    display: flex;
+    flex-direction: column;
     max-width: 1366px;
 
     margin: 48px auto;
@@ -14,11 +16,9 @@ export const Container = styled.div`
     grid-area: content;
     overflow-y: auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     h1 {
       color: ${({ theme }) => theme.COLORS.white};
-      font-size: 32px;
     }
     a {
       display: flex;
@@ -48,4 +48,11 @@ export const Container = styled.div`
       }
     }
   }
+`;
+
+export const PageTitle = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 `;
