@@ -26,10 +26,22 @@ export const Container = styled.div`
     -webkit-box-orient: vertical;
     width: 100%;
   }
-  ul {
+  footer {
     width: 100%;
     display: flex;
-    gap: 8px;
+    /* gap: 8px; */
+
     margin-top: 15px;
+    align-self: center;
+    > span:first-child {
+      margin-left: 0;
+    }
+
+    > span {
+      padding: 5px 16px;
+      color: ${({ theme }) => theme.COLORS.gray};
+      margin-left: 8px;
+      align-self: center;
+    }
   }
 `;
