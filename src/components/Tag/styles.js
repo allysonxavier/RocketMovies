@@ -9,7 +9,7 @@ export const Container = styled.span`
 
   > span {
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
     color: ${({ theme }) => theme.COLORS.gray};
     padding: 5px 16px;
   }

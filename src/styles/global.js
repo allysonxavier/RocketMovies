@@ -7,7 +7,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
 }
 body{
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+    background-color: ${({ theme }) => theme.COLORS.background800};
 -webkit-font-smoothing: antialiased;
 }
 body, input, button, textarea{

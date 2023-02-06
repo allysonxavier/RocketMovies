@@ -1,50 +1,80 @@
 import styled from "styled-components";
 export const Container = styled.div`
-  width: 100%;
-  height: 100vh;
   background-color: ${({ theme }) => theme.COLORS.background800};
+  height: 100vh;
   display: flex;
+  width: 100%;
+  align-items: center;
   flex-direction: column;
-  > main {
-    padding: 24px 123px;
-    display: flex;
-    flex-direction: column;
-    max-width: 1366px;
 
-    margin: 48px auto;
-    width: 100%;
-    grid-area: content;
+  .teste {
     overflow-y: auto;
-    display: flex;
-    justify-content: space-between;
-    h1 {
-      color: ${({ theme }) => theme.COLORS.white};
+    overflow: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 48px auto;
+    grid-template-areas:
+      "page"
+      "content";
+
+    main {
+      /* background-color: ${({ theme }) => theme.COLORS.background700}; */
+      margin-top: 138px;
+      grid-area: content;
+      overflow-y: auto;
+      max-width: 1121px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      ::-webkit-scrollbar {
+        width: 8px;
+        background-color: ${({ theme }) => theme.COLORS.background800};
+        height: 8px;
+        /* margin-top: 48px; */
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: ${({ theme }) => theme.COLORS.pink};
+        border-radius: 8px;
+        height: 40px;
+        border: 2px solid transparent;
+        /* margin-top: 48px; */
+      }
+      h1 {
+        color: ${({ theme }) => theme.COLORS.white};
+      }
     }
-    a {
+
+    .page {
+      position: relative;
+      top: 0;
+      margin: 48px auto;
+      grid-area: page;
+      width: 100%;
       display: flex;
       align-items: center;
-      text-align: center;
-      justify-content: center;
-      width: 207px;
       height: 48px;
-      font-size: 16px;
-      background-color: ${({ theme }) => theme.COLORS.pink};
-      border-radius: 8px;
-      padding: 32px;
-      svg {
-        width: 16px;
-        height: 16px;
-        color: ${({ theme }) => theme.COLORS.background900};
-        display: flex;
-        align-items: center;
+      > h1 {
+        color: ${({ theme }) => theme.COLORS.white};
       }
-      .button-add {
-        width: 100%;
-        background: transparent;
+
+      > a {
+        height: 48px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: 8px;
+        width: 207px;
+        padding: auto 32px;
+        font-size: 16px;
+        background-color: ${({ theme }) => theme.COLORS.pink};
+        border-radius: 8px;
+        > svg {
+          width: 16px;
+          height: 16px;
+          color: ${({ theme }) => theme.COLORS.background900};
+        }
       }
     }
   }
