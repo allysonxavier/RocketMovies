@@ -1,22 +1,29 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  margin: 0 auto;
-  padding: 30px 0;
-  width: 100%;
-  height: 116px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: ${({ theme }) => theme.COLORS.section};
-  > h1 {
-    font-weight: 700;
-    font-size: 24px;
-    color: ${({ theme }) => theme.COLORS.pink};
+  width: 100%;
+
+  section {
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 100%;
+    height: 116px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1366px;
+    padding: 42px 123px;
+    > h1 {
+      font-weight: 700;
+      font-size: 24px;
+      color: ${({ theme }) => theme.COLORS.pink};
+    }
   }
 `;
+
 export const Profile = styled.div`
   display: flex;
   align-items: center;

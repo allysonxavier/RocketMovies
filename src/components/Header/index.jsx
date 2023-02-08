@@ -5,20 +5,22 @@ export function Header() {
   return (
     <>
       <Container>
-        <h1>RocketMovies</h1>
-        <Input title="Pesquisar pelo título" />
-        <Profile>
-          <div>
-            <strong>Allyson Xavier</strong>
-            <a>sair</a>
-          </div>
-          <a>
-            <img
-              src="https://github.com/allysonxavier.png"
-              alt="Foto de Perfil do Usuário"
-            />
-          </a>
-        </Profile>
+        <section className="header">
+          <h1>RocketMovies</h1>
+          <Input title="Pesquisar pelo título" />
+          <Profile>
+            <div>
+              <strong>Allyson Xavier</strong>
+              <a>sair</a>
+            </div>
+            <a>
+              <img
+                src="https://github.com/allysonxavier.png"
+                alt="Foto de Perfil do Usuário"
+              />
+            </a>
+          </Profile>
+        </section>
       </Container>
     </>
   );

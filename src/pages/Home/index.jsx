@@ -9,8 +9,8 @@ export function Home({ icon: Icon }) {
   return (
     <Container>
       <Header />
-      <section className="content">
-        <PageTitle className="page" icon={Icon} size="20">
+      <main>
+        <PageTitle icon={Icon} size="20">
           <h1>Meus Filmes</h1>
           <a>
             <Button
@@ -21,7 +21,7 @@ export function Home({ icon: Icon }) {
             />
           </a>
         </PageTitle>
-        <main>
+        <section className="content">
           <Note
             data={{
               title: "React",
@@ -70,8 +70,8 @@ export function Home({ icon: Icon }) {
               ],
             }}
           />
-        </main>
-      </section>
+        </section>
+      </main>
     </Container>
   );
 }
