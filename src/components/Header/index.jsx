@@ -1,4 +1,4 @@
-import { Container, Profile, Line } from "./styles";
+import { Container, Profile } from "./styles";
 import { Input } from "../Input";
 
 export function Header() {
@@ -6,7 +6,7 @@ export function Header() {
     <>
       <Container>
         <h1>RocketMovies</h1>
-        <Input />
+        <Input title="Pesquisar pelo título" />
         <Profile>
           <div>
             <strong>Allyson Xavier</strong>
@@ -20,7 +20,6 @@ export function Header() {
           </a>
         </Profile>
       </Container>
-      <Line />
     </>
   );
 }

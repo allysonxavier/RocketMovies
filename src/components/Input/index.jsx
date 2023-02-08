@@ -1,9 +1,9 @@
 import { Container } from "./styles";
 
-export function Input() {
+export function Input({ title }) {
   return (
     <Container>
-      <input placeholder="Pesquisar título" />
+      <input placeholder={title} title={title} />
     </Container>
   );
 }

@@ -2,12 +2,14 @@ import styled from "styled-components";
 export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.background800};
   height: 100vh;
-  display: flex;
   width: 100%;
+  max-width: 1137px;
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  .teste {
+  margin: 0 auto;
+  .content {
     overflow-y: auto;
     overflow: auto;
     display: grid;
@@ -17,18 +19,22 @@ export const Container = styled.div`
       "page"
       "content";
 
+    h1 {
+      font-weight: 400;
+    }
     main {
       /* background-color: ${({ theme }) => theme.COLORS.background700}; */
       margin-top: 138px;
       grid-area: content;
-      overflow-y: auto;
-      max-width: 1121px;
+      overflow: auto;
+      margin-right: 8px;
       width: 100%;
       display: flex;
       flex-direction: column;
       gap: 15px;
 
       ::-webkit-scrollbar {
+        margin-left: 8px;
         width: 8px;
         background-color: ${({ theme }) => theme.COLORS.background800};
         height: 8px;
@@ -38,6 +44,7 @@ export const Container = styled.div`
       ::-webkit-scrollbar-thumb {
         background-color: ${({ theme }) => theme.COLORS.pink};
         border-radius: 8px;
+        width: 16px;
         height: 40px;
         border: 2px solid transparent;
         /* margin-top: 48px; */
@@ -64,13 +71,16 @@ export const Container = styled.div`
         height: 48px;
         display: flex;
         align-items: center;
+        text-align: center;
         justify-content: center;
         width: 207px;
         padding: auto 32px;
         font-size: 16px;
         background-color: ${({ theme }) => theme.COLORS.pink};
         border-radius: 8px;
-        > svg {
+        svg {
+          margin-right: 8px;
+          align-self: center;
           width: 16px;
           height: 16px;
           color: ${({ theme }) => theme.COLORS.background900};
