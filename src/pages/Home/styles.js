@@ -60,6 +60,10 @@ export const Container = styled.div`
       display: flex;
       flex-direction: column;
       margin-bottom: 60px;
+      svg {
+        height: 12px;
+        width: 12px;
+      }
       h1 {
         font-weight: 400;
       }

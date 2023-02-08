@@ -16,7 +16,7 @@ export function Score({ score }) {
         name={i + 1}
         onClick={onClick}
       >
-        {i < Number(score) ? <AiFillStar /> : <AiOutlineStar />}
+        {i < Number(score) ? <AiFillStar size="16" /> : <AiOutlineStar />}
       </span>
     );
   });
