@@ -6,6 +6,7 @@ export const Container = styled.span`
   text-decoration: none;
   background-color: ${({ theme }) => theme.COLORS.gray400};
   border-radius: 8px;
+  cursor: pointer;
 
   > span {
     text-align: center;
