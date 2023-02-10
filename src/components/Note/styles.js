@@ -10,6 +10,7 @@ export const Container = styled.div`
   background: rgba(255, 133, 155, 0.05);
   border-radius: 16px;
   max-width: 1121px;
+  cursor: pointer;
 
   h1 {
     font-size: 24px;
